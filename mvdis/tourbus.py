@@ -14,6 +14,7 @@ class TourBus(object):
     def __init__(self):
         self.session = requests.Session()
         self.data = None
+        self.page = 1
         self._init_session()
 
     def _init_session(self):
